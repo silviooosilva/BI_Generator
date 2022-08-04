@@ -1,10 +1,4 @@
 import random
-# #################
-# -----------     #
-#  CONSTANTE      #
-# ------------    #
-###################
-
 
 const = '00'
 
@@ -53,11 +47,10 @@ def province_choosed(code: int):
 def generate_per_province(code: int):
     try:
         keys = list(province_code.items())
-        for count in range(17+1):
+        for count in range(18):
             if province_choosed(code) in keys[count][0]:
                 Province_code = keys[count][1]
                 BI_generated = f'{const}{ID_code}{Province_code}{const[0:1]}{number_code}'    
-                # return BI_generated
                 print(BI_generated)      
     except:
         print('Aconteceu um erro não programável! Tente Novamente. [!]')
