@@ -36,9 +36,9 @@ if(choose == 1):
     |CHOOSE A PROVINCE TO GENERATE|
     -------------------------------
     |[0]| - Luanda
-    |[1]|- Bengo
+    |[1]| - Bengo
     |[2]| - Kwanza-Norte
-    |[3]|- Kwanza-Sul
+    |[3]| - Kwanza-Sul
     |[4]| - Uíge
     |[5]| - Zaíre
     |[6]| - Malanje
@@ -57,4 +57,6 @@ if(choose == 1):
     Code_Province = int(input('>: '))
     generate_per_province(Code_Province)
 if(choose == 2):
-    print(f'{Fore.BLUE}By: Sílvio Silva [!]')
+    print('Tenha um ótimo dia!')
+
+print(f'\n{Fore.BLUE}By: Sílvio Silva [!]') 
