@@ -1,4 +1,7 @@
 import random
+import re
+
+from colorama import Fore
 
 const = '00'
 
@@ -54,3 +57,16 @@ def generate_per_province(code: int):
                 print(BI_generated)      
     except:
         print('Aconteceu um erro não programável! Tente Novamente. [!]')
+
+
+def validator(BI: str):
+    try:
+        BI_pattern = re.compile(r'^\d{9}[A-Z]{2}\d{3}$')
+        search_pattern = BI_pattern.search(BI)
+
+        if search_pattern:
+            print(f'{Fore.GREEN}[!] BI VÁLIDO [!]')
+        else:
+            print(f'{Fore.RED}[!] BI INVÁLIDO [!]')
+    except:
+        print("[!] Aconteceu um erro não programável! Tente Novamente.")
