@@ -11,7 +11,8 @@ print(f"""{Fore.GREEN}
         ----------------------------
         | [0] - GERAR BI ALEATÓRIO |
         | [1] - GERAR POR PROVÍN.  |
-        | [2] - SAIR               |
+        | [2] - BI VALIDATOR       |
+        | [3] - SAIR               |
         ----------------------------
     """)
 
@@ -56,7 +57,20 @@ if(choose == 1):
     """)
     Code_Province = int(input('>: '))
     generate_per_province(Code_Province)
+
 if(choose == 2):
+    print("""
+---------------------
+|BI NUMBER VALIDATOR|
+---------------------
+    """)
+    BI = str(input('Informe o seu BI: '))
+
+    print("--------------------------")
+    print("  RESULTADO DA CONSULTA   ")
+    print("--------------------------")
+    validator(BI)
+if(choose == 3):
     print('Tenha um ótimo dia!')
 
 print(f'\n{Fore.BLUE}By: Sílvio Silva [!]') 
