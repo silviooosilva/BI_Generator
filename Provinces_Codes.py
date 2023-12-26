@@ -2,7 +2,7 @@
 province_code = {
     'Luanda':'LA', 
     'Bengo':'BO', 
-    'Kwanza-Norte':'CN',
+    'Kwanza-Norte':'CE',
     'Kwanza-Sul':'CS',
     'Uíge':'UE',
     'Zaíre':'ZE',
@@ -10,7 +10,7 @@ province_code = {
     'Lunda-Sul':'LS',
     'Lunda-Norte':'LN',
     'Moxico':'MO',
-    'Kuando Kubango':'KO',
+    'Kuando Kubango':'KK',
     'Cunene':'CE',
     'Huíla':'HA',
     'Huambo':'HO',
