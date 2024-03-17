@@ -6,7 +6,7 @@ from Provinces_Codes import *
 
 const = '00'
 
-number_code = random.randint(1, 99)
+number_code = random.randint(10, 99)
 ID_code = random.randint(1000000, 9000000)
 
 def generate_BI_Number():
